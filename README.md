@@ -31,6 +31,10 @@ Before running the app, ensure you have the following tools installed:
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
 
+## RUNNIG THE PROJECT 
+
+npm run dev
+
 ## Installation
 
 To get started with this project, follow these steps:
