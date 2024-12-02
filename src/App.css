@@ -1,0 +1,145 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+h1 {
+  text-align: center;
+  color: #000000;
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.search-container input {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #5e72e4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #324cdd;
+}
+
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.character-card {
+  position: relative;
+  border: 1px solid #0d6efd;
+  border-radius: 8px;
+  background-color: white;
+  transition: box-shadow 0.3s ease;
+}
+
+.character-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.character-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.character-card h3 {
+  margin: 10px 0;
+  color: #172b4d;
+  text-align: center;
+}
+
+.character-card p {
+  margin: 5px 0;
+}
+
+.status-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 0px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.status-overlay.alive {
+  background-color: #2dce89;
+}
+
+.status-overlay.dead {
+  background-color: #f5365c;
+}
+
+.status-overlay.unknown {
+  background-color: #ced4da;
+}
+
+.character-detail {
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.character-detail h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.character-detail img {
+  width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.character-detail p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.status {
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.status-alive {
+  background-color: #106213; 
+  color: white;
+}
+
+.status-dead {
+  background-color: #F44336; 
+  color: white;
+}
+
+.status-unknown {
+  background-color: #9E9E9E; 
+  color: white;
+}
